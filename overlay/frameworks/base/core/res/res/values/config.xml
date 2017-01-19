@@ -2,6 +2,7 @@
 <!--
 /*
 ** Copyright 2015, The CyanogenMod Project
+** Copyright 2017, The LineageOS Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -285,5 +286,8 @@
 
     <!-- Flag specifying whether WFC over IMS is available on device -->
     <bool name="config_device_wfc_ims_available">true</bool>
+
+    <!-- Enable blur support -->
+    <bool name="config_uiBlurEnabled">true</bool>
 
 </resources>
