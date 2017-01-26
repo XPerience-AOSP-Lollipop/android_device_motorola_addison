@@ -20,6 +20,5 @@ allow init self:netlink_socket { read write getattr connect };
 #per syst
 allow init persist_file:filesystem relabelto;
 allow init persist_file:filesystem relabelfrom;
-allow init persist_file:filesystem associate;
-allow init persist_file:filesystem { mount getattr };
+allow init persist_file:filesystem { mount getattr associate };
 
