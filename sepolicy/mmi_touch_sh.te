@@ -17,3 +17,12 @@ allow mmi_touch_sh toolbox_exec:file { execute getattr read open execute_no_tran
 
 allow mmi_touch_sh sysfs:file { read open setattr getattr };
 allow mmi_touch_sh sysfs_mmi_touch:file { setattr read open };
+
+#property
+allow mmi_touch_sh property_socket:sock_file { write };
+
+#init
+allow mmi_touch_sh init:unix_stream_socket { connectto };
+
+#touch
+allow mmi_touch_sh touch_prop:file { read open getattr};
