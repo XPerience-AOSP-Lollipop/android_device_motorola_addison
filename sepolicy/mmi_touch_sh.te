@@ -15,5 +15,5 @@ allow mmi_touch_sh sysfs_mmi_touch:dir search;
 
 allow mmi_touch_sh toolbox_exec:file { execute getattr read open execute_no_trans};
 
-allow mmi_touch_sh sysfs:file { search read open setattr getattr };
-allow mmi_touch_sh sysfs_mmi_touch:file { setattr  };
+allow mmi_touch_sh sysfs:file { read open setattr getattr };
+allow mmi_touch_sh sysfs_mmi_touch:file { setattr read open };
