@@ -1,0 +1,1 @@
+allow untrusted_app fsg_file:dir { read };
