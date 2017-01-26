@@ -1,0 +1,2 @@
+allow priv_app persist_file:filesystem { getattr read open };
+allow priv_app device:dir { getattr read open }:
