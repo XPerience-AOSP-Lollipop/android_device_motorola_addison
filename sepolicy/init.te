@@ -22,3 +22,8 @@ allow init persist_file:filesystem relabelto;
 allow init persist_file:filesystem relabelfrom;
 allow init persist_file:filesystem { mount getattr associate };
 
+#Cutbak
+allow init socket_device:sock_file { unlink };
+
+#sysfs
+allow init sysfs:dir { write };
