@@ -1,1 +1,4 @@
+#============= priv_app ==============
+allow priv_app persist_file:filesystem getattr;
 allow priv_app device:dir { read open getattr };
+
