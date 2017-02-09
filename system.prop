@@ -22,11 +22,19 @@ persist.audio.calfile6=/etc/acdbdata/Speaker_cal.acdb
 
 persist.audio.fluence.mode=endfire
 persist.audio.fluence.speaker=true
+persist.audio.fluence.voicerec=false
 persist.audio.fluence.voicecall=true
 ro.qc.sdk.audio.fluencetype=none
 ro.qc.sdk.audio.ssr=false
 
 use.voice.path.for.pcm.voip=false
+
+#property to enable DS2 dap
+audio.dolby.ds2.enabled=true
+
+#min/max cpu in core control
+ro.core_ctl_min_cpu=2
+ro.core_ctl_max_cpu=4
 
 # Bluetooth
 bluetooth.hfp.client=1
@@ -73,6 +81,9 @@ ro.systemui.burn_in_protection=true
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+#force HAL1 for below packages
+camera.hal1.packagelist=com.skype.raider,com.google.android.talk
+
 # Media
 media.aac_51_output_enabled=true
 
@@ -91,9 +102,11 @@ persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
 
 # Qualcomm
+ro.build.version.qcom=LA.UM.5.6.r1-01900-89xx.0
 com.qc.hardware=true
 debug.qc.hardware=true
 persist.timed.enable=true
+qcom.hw.aac.encoder=true
 
 # Radio
 persist.data.qmi.adb_logmask=0
