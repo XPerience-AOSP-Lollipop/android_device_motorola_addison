@@ -1,3 +1,8 @@
+#============= mmi_touch_sh ==============
+allow mmi_touch_sh self:capability chown;
+allow mmi_touch_sh sysfs:dir { open read };
+allow mmi_touch_sh sysfs:lnk_file getattr;
+
 type mmi_touch_sh, domain;
 type mmi_touch_sh_exec, exec_type, file_type;
 init_daemon_domain(mmi_touch_sh)
