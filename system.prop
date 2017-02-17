@@ -80,7 +80,7 @@ ro.sf.lcd_density=480
 ro.systemui.burn_in_protection=true
 
 # FRP
-ro.frp.pst=/dev/block/bootdevice/by-name/frp
+#ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 #force HAL1 for below packages
 camera.hal1.packagelist=com.skype.raider,com.google.android.talk
