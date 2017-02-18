@@ -330,7 +330,6 @@ vendor/lib/libscvePanorama_lite.so
 vendor/lib/libscveTextReco.so
 vendor/lib/libscveTextRecoPostProcessing.so
 vendor/lib/libscveTextReco_stub.so
-vendor/lib/libuiblur.so
 
 # Graphics firmware
 etc/firmware/a530_gpmu.fw2

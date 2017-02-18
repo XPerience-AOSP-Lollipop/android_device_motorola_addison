@@ -1,3 +1,0 @@
-#============= tee ==============
-allow tee persist_file:file { open read };
-

@@ -1,8 +1,3 @@
-#============= mmi_touch_sh ==============
-allow mmi_touch_sh self:capability chown;
-allow mmi_touch_sh sysfs:dir { open read };
-allow mmi_touch_sh sysfs:lnk_file getattr;
-
 type mmi_touch_sh, domain;
 type mmi_touch_sh_exec, exec_type, file_type;
 init_daemon_domain(mmi_touch_sh)
@@ -20,19 +15,6 @@ allow mmi_touch_sh sysfs_mmi_touch:file rw_file_perms;
 allow mmi_touch_sh sysfs_mmi_touch:file setattr;
 allow mmi_touch_sh sysfs_mmi_touch:dir search;
 
-allow mmi_touch_sh toolbox_exec:file { execute getattr read open execute_no_trans};
-
-allow mmi_touch_sh sysfs:file { read open setattr getattr };
-allow mmi_touch_sh sysfs_mmi_touch:file { setattr read open };
-
-#property
-allow mmi_touch_sh property_socket:sock_file { write };
-
-#init
-allow mmi_touch_sh init:unix_stream_socket { connectto };
-
-#touch
-set_prop(mmi_touch_sh, touch_prop);
-
 allow mmi_touch_sh system_file:dir { open read };
 
+set_prop(mmi_touch_sh, touch_prop);

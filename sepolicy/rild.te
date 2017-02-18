@@ -1,2 +1,0 @@
-#oma_dm_update
-allow rild persist_file:file { read write open };
