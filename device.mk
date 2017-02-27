@@ -18,16 +18,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# Prebuilt DT
-#PRODUCT_COPY_FILES += \
-#	$(LOCAL_PATH)/dtb/msm8937-cedric-p1.dtb:obj/KERNEL_OBJ/arch/arm/boot/dts/qcom/msm8937-cedric-p1.dtb \
-#	$(LOCAL_PATH)/dtb/msm8953-addison-p1.dtb:obj/KERNEL_OBJ/arch/arm/boot/dts/qcom/mmsm8953-addison-p1.dtb \
-#	$(LOCAL_PATH)/dtb/msm8953-addison-p2a.dtb:obj/KERNEL_OBJ/arch/arm/boot/dts/qcom/msm8953-addison-p2a.dtb \
-#	$(LOCAL_PATH)/dtb/msm8953-addison-p3.dtb:obj/KERNEL_OBJ/arch/arm/boot/dts/qcom/msm8953-addison-p3.dtb \
-#	$(LOCAL_PATH)/dtb/msm8953-addison-p4.dtb:obj/KERNEL_OBJ/arch/arm/boot/dts/qcom/msm8953-addison-p4.dtb \
-#	$(LOCAL_PATH)/dtb/msm8953-addison-p7.dtb:obj/KERNEL_OBJ/arch/arm/boot/dts/qcom/msm8953-addison-p7.dtb \
-#	$(LOCAL_PATH)/dtb/msm8953-potter-p0a.dtb:obj/KERNEL_OBJ/arch/arm/boot/dts/qcom/msm8953-potter-p0a.dtb 
-
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
