@@ -19,4 +19,4 @@ Camera  | 16 MP, 4608 x 3456 pixels, laser focus, dual flash LED
 
 Copyright 2016 - The CyanogenMod Project.
 
-![Moto Z Play](https://wiki.cyanogenmod.org/images/thumb/8/81/Osprey.png/314px-Osprey.png "Moto Z Play")
+![Moto Z Play](https://i1.wp.com/www.smart-gsm.com/blog/wp-content/uploads/2016/09/MotoZPlay_FrontBackCombo.jpg?fit=620%2C474 "Moto Z Play")
