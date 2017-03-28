@@ -371,6 +371,11 @@ vendor/lib/libOmxWmaDec.so
 bin/batt_health
 bin/dbvc_atvc_property_set
 
+#mods
+#priv-app/ModService/ModService.apk
+bin/mods_camd
+lib/libmodmanager.so
+
 # NFC
 vendor/firmware/libpn548ad_fw.so
 
