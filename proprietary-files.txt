@@ -46,6 +46,9 @@ vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so
 vendor/lib/libaptXScheduler.so
 vendor/lib/libbtnv.so
 
+#Blur
+vendor/lib/libuiblur.so
+
 # Camera
 bin/mm-qcamera-daemon
 lib/hw/camera.msm8953.so
