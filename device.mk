@@ -101,7 +101,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap \
+    camera.msm8953 \
     libbson \
     libshim_camera
 
