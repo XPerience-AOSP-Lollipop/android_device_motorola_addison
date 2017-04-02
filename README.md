@@ -18,5 +18,8 @@ Display | 1080 x 1920 pixels, 5.5 inches (~403 ppi pixel density)
 Camera  | 16 MP, 4608 x 3456 pixels, laser focus, dual flash LED
 
 Copyright 2016 - The CyanogenMod Project.
+Copyright 2017 - The LineageOS Project.
+Copyright 2017 - The XPerience Project.
 
 ![Moto Z Play](https://i1.wp.com/www.smart-gsm.com/blog/wp-content/uploads/2016/09/MotoZPlay_FrontBackCombo.jpg?fit=620%2C474 "Moto Z Play")
+
