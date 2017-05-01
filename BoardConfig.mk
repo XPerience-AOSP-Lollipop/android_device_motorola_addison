@@ -75,3 +75,24 @@ TARGET_USERIMAGES_USE_F2FS := true
 TW_NEW_ION_HEAP := true
 TW_THEME := portrait_hdpi
 TW_SCREEN_BLANK_ON_BOOT := true
+
+# MR config. MultiROM also uses parts of TWRP config
+TARGET_RECOVERY_IS_MULTIROM := true
+MR_CONTINUOUS_FB_UPDATE := true
+MR_DPI := xhdpi
+MR_DPI_FONT := 340
+MR_USE_MROM_FSTAB := true
+MR_FSTAB := device/motorola/addison/multirom/mrom.fstab
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := $(PLATFORM_PATH)/multirom/mr_init_devices.c
+MR_KEXEC_MEM_MIN := 0x1fd00000
+MR_KEXEC_DTB := true
+MR_DEVICE_HOOKS := $(PLATFORM_PATH)/multirom/mr_hooks.c
+MR_DEVICE_HOOKS_VER := 4
+MR_DEVICE_VARIANTS := Addison addison_retail
+MR_USE_QCOM_OVERLAY := true
+MR_QCOM_OVERLAY_HEADER := $(PLATFORM_PATH)/multirom/mr_qcom_overlay.h
+MR_QCOM_OVERLAY_CUSTOM_PIXEL_FORMAT := MDP_RGBX_8888
+NEW_ION_HEAP := true
+MR_QCOM_OVERLAY_HEAP_ID_MASK := 1
+MR_NO_KEXEC := enabled
