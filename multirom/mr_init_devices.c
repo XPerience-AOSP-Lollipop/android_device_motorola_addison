@@ -20,7 +20,7 @@ const char *mr_init_devices[] =
     "/dev/block/bootdevice/by-name",
     "/dev/block/platform/soc/7824900.sdhci",
     "/dev/block/platform/soc/7824900.sdhci/by-name",
-    "/dev/block/platform/soc/7824900.sdhci/by-name/system". //system
+    "/dev/block/platform/soc/7824900.sdhci/by-name/system", //system
     "/dev/block/platform/soc/7824900.sdhci/by-name/cache",
     "/dev/block/platform/soc/7824900.sdhci/by-name/userdata",
     "/dev/block/platform/soc/7824900.sdhci/by-name/boot",
@@ -48,7 +48,7 @@ const char *mr_init_devices[] =
     "/sys/module/uinput",
     // i2c
     "/sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input*",
-    "/sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input/input2
+    "/sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input/input2",
 
     // for adb
     "/sys/class/android_usb/android0*",
