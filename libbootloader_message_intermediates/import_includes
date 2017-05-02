@@ -1,0 +1,4 @@
+-I external/libcxx/include
+-I external/libcxxabi/include
+-I system/core/base/include
+-I system/core/fs_mgr/include
