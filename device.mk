@@ -104,7 +104,7 @@ PRODUCT_PACKAGES += \
     camera.msm8953 \
     libbson \
     libshim_camera \
-    Snap
+    SnapdragonCamera
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/msm8953_mot_camera.xml:system/etc/camera/msm8953_mot_camera.xml \
@@ -280,5 +280,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, vendor/XPe/config/common_full_phone.mk)

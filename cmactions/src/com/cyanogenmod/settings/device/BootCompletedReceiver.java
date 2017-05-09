@@ -22,11 +22,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
+import android.os.Binder;
 import android.util.Log;
 
-import com.cyanogenmod.settings.device.ServiceWrapper.LocalBinder;
+//import com.cyanogenmod.settings.device.ServiceWrapper.LocalBinder;
 
-import org.cyanogenmod.internal.util.FileUtils;
+import com.cyanogenmod.settings.device.FileUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
     static final String TAG = "CMActions";
