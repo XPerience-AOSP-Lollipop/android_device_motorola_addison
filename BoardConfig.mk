@@ -75,17 +75,20 @@ TARGET_USERIMAGES_USE_F2FS := true
 TW_NEW_ION_HEAP := true
 TW_THEME := portrait_hdpi
 TW_SCREEN_BLANK_ON_BOOT := true
+WITH_CM_CHARGER := false
 
 # MR config. MultiROM also uses parts of TWRP config
 TARGET_RECOVERY_IS_MULTIROM := true
 MR_CONTINUOUS_FB_UPDATE := true
+MR_DEV_BLOCK_BOOTDEVICE := true
 MR_DPI := xhdpi
 MR_DPI_FONT := 340
 MR_USE_MROM_FSTAB := true
+DEVICE_RESOLUTION := 1080x1920
 MR_FSTAB := device/motorola/addison/multirom/mrom.fstab
 MR_INPUT_TYPE := type_b
 MR_INIT_DEVICES := $(DEVICE_PATH)/multirom/mr_init_devices.c
-MR_KEXEC_MEM_MIN := 0x1fd00000
+MR_KEXEC_MEM_MIN := 0x85000000
 MR_KEXEC_DTB := true
 MR_DEVICE_HOOKS := $(DEVICE_PATH)/multirom/mr_hooks.c
 MR_DEVICE_HOOKS_VER := 4
@@ -96,3 +99,4 @@ MR_QCOM_OVERLAY_CUSTOM_PIXEL_FORMAT := MDP_RGBX_8888
 NEW_ION_HEAP := true
 MR_QCOM_OVERLAY_HEAP_ID_MASK := 1
 MR_NO_KEXEC := enabled
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
