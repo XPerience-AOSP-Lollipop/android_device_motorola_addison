@@ -103,5 +103,6 @@ MR_KEXEC_DTB := true
 #MR_QCOM_OVERLAY_HEAP_ID_MASK := 1
 MR_NO_KEXEC := enabled
 MR_REC_VERSION := $(shell date -u +%Y%m%d)-01
-#TW_DEVICE_VERSION := Addison-Teammex
+TW_DEVICE_VERSION := Addison-Teammex
+BOARD_MKBOOTIMG_ARGS += --board mrom$(MR_REC_VERSION)
 TARGET_USE_CUSTOM_LUN_FILE_PATH := sys/devices/soc/7000000.ssusb/7000000.dwc3/gadget/lun%d/file
