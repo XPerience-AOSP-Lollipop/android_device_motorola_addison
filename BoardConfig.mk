@@ -64,6 +64,8 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 TW_INCLUDE_CRYPTO := true
+TARGET_KEYMASTER_WAIT_FOR_QSEE := true
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/cryptfs_hw
 
 # TWRP
 RECOVERY_SDCARD_ON_DATA := true
@@ -85,18 +87,19 @@ MR_DPI := xhdpi
 MR_DPI_FONT := 340
 MR_USE_MROM_FSTAB := true
 DEVICE_RESOLUTION := 1080x1920
+MR_PIXEL_FORMAT := "RGBA_8888"
 MR_FSTAB := device/motorola/addison/multirom/mrom.fstab
 MR_INPUT_TYPE := type_b
 MR_INIT_DEVICES := $(DEVICE_PATH)/multirom/mr_init_devices.c
 MR_KEXEC_MEM_MIN := 0x85000000
 MR_KEXEC_DTB := true
-MR_DEVICE_HOOKS := $(DEVICE_PATH)/multirom/mr_hooks.c
-MR_DEVICE_HOOKS_VER := 4
-MR_DEVICE_VARIANTS := Addison addison_retail
-MR_USE_QCOM_OVERLAY := true
-MR_QCOM_OVERLAY_HEADER := $(DEVICE_PATH)/multirom/mr_qcom_overlay.h
-MR_QCOM_OVERLAY_CUSTOM_PIXEL_FORMAT := MDP_RGBX_8888
-NEW_ION_HEAP := true
-MR_QCOM_OVERLAY_HEAP_ID_MASK := 1
+#MR_DEVICE_HOOKS := $(DEVICE_PATH)/multirom/mr_hooks.c
+#MR_DEVICE_HOOKS_VER := 4
+#MR_DEVICE_VARIANTS := Addison addison_retail
+#MR_USE_QCOM_OVERLAY := true
+#MR_QCOM_OVERLAY_HEADER := $(DEVICE_PATH)/multirom/mr_qcom_overlay.h
+#MR_QCOM_OVERLAY_CUSTOM_PIXEL_FORMAT := MDP_RGBX_8888
+#NEW_ION_HEAP := true
+#MR_QCOM_OVERLAY_HEAP_ID_MASK := 1
 MR_NO_KEXEC := enabled
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file

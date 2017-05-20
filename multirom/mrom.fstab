@@ -1,13 +1,13 @@
-/system       ext4          /dev/block/mmcblk0p53
-/data         f2fs          /dev/block/mmcblk0p54
-/keymaster    emmc          /dev/block/mmcblk0p8
-/cache        auto          /dev/block/mmcblk0p52
-/boot         emmc          /dev/block/mmcblk0p37
-/recovery     emmc          /dev/block/mmcblk0p38
-/oem          ext4          /dev/block/mmcblk0p51
-/persist      ext4          /dev/block/mmcblk0p30
-/firmware     ext4          /dev/block/mmcblk0p19
-/misc         emmc          /dev/block/mmcblk0p39
+/boot       emmc        /dev/block/mmcblk0p37
+/recovery   emmc        /dev/block/mmcblk0p38
+/system     ext4        /dev/block/mmcblk0p53
+/data       f2fs        /dev/block/mmcblk0p54
+/cache      ext4        /dev/block/mmcblk0p52
+/persist    ext4        /dev/block/mmcblk0p30
+/firmware   vfat        /dev/block/mmcblk0p19
+/keymaster  emmc        /dev/block/mmcblk0p8
+/oem        ext4        /dev/block/mmcblk0p51
+/misc       emmc        /dev/block/mmcblk0p39
 
 /external_sd  auto          /dev/block/mmcblk1p1  /dev/block/mmcblk1     flags=display="MicroSD Card";storage;wipeingui;removable
 /usb_otg      auto          /dev/block/sda1       /dev/block/sda         flags=display="USB-OTG";storage;wipeingui;removable
