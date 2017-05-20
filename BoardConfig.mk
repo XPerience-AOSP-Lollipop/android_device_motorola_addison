@@ -82,7 +82,7 @@ WITH_CM_CHARGER := false
 # MR config. MultiROM also uses parts of TWRP config
 TARGET_RECOVERY_IS_MULTIROM := true
 MR_CONTINUOUS_FB_UPDATE := true
-MR_DEV_BLOCK_BOOTDEVICE := true
+#MR_DEV_BLOCK_BOOTDEVICE := true
 MR_DPI := xhdpi
 MR_DPI_FONT := 340
 MR_USE_MROM_FSTAB := true
@@ -102,4 +102,6 @@ MR_KEXEC_DTB := true
 #NEW_ION_HEAP := true
 #MR_QCOM_OVERLAY_HEAP_ID_MASK := 1
 MR_NO_KEXEC := enabled
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
+MR_REC_VERSION := $(shell date -u +%Y%m%d)-01
+#TW_DEVICE_VERSION := Addison-Teammex
+TARGET_USE_CUSTOM_LUN_FILE_PATH := sys/devices/soc/7000000.ssusb/7000000.dwc3/gadget/lun%d/file

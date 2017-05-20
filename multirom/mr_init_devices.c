@@ -27,16 +27,16 @@ const char *mr_init_devices[] =
     "/dev/block/platform/soc/7824900.sdhci/by-name/recovery",
     "/dev/block/platform/soc/7824900.sdhci/by-name/persist",
     "/dev/block/platform/soc/7824900.sdhci/by-name/modem",
-    "/sys/devices/soc/7824900.sdhci",
-    "/sys/devices/soc/7824900.sdhci/mmc_host/mmc0",
-    "/sys/devices/soc/7824900.sdhci/mmc_host/mmc0/mmc0:0001",
-    "/sys/devices/soc/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0",
-    "/sys/devices/soc/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p37", // boot
-    "/sys/devices/soc/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p52", // cache
-    "/sys/devices/soc/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p19", // modem
-    "/sys/devices/soc/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p30", // persist
-    "/sys/devices/soc/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p53", // system
-    "/sys/devices/soc/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p54", // userdata
+//    "/sys/devices/soc/7824900.sdhci",
+//    "/sys/devices/soc/7824900.sdhci/mmc_host/mmc0",
+//    "/sys/devices/soc/7824900.sdhci/mmc_host/mmc0/mmc0:0001",
+//    "/sys/devices/soc/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0",
+//    "/sys/devices/soc/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p37", // boot
+//    "/sys/devices/soc/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p52", // cache
+//    "/sys/devices/soc/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p19", // modem
+//    "/sys/devices/soc/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p30", // persist
+//    "/sys/devices/soc/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p53", // system
+//    "/sys/devices/soc/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p54", // userdata
     "/sys/bus/mmc",
     "/sys/bus/mmc/drivers/mmcblk",
     "/sys/module/sdhci",
