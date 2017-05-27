@@ -14,6 +14,7 @@
 # limitations under the License.
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call add-product-dex-preopt-module-config,Settings SystemUI ThemeInterfacer, enable)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
