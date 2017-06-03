@@ -151,10 +151,6 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     gps.msm8953
 
-# IMS
-PRODUCT_PACKAGES += \
-    libshim_ims
-
 # IPA Manager
 PRODUCT_PACKAGES += \
     ipacm \
