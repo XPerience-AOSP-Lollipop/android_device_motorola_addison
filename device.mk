@@ -51,10 +51,6 @@ frameworks/native/data/etc/android.hardware.opengles.aep.xml:system/etc/permissi
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
-# Motorola Camera permissions
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/com.motorola.cameraone.xml:system/etc/permissions/com.motorola.cameraone.xml
-
 # Screen density
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_AAPT_CONFIG := normal
@@ -102,6 +98,7 @@ PRODUCT_PACKAGES += \
     camera.msm8953 \
     libbson \
     libshim_camera \
+    MotCamera \
     Snap
 
 PRODUCT_COPY_FILES += \
