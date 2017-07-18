@@ -22,7 +22,6 @@ LOCAL_C_INCLUDES := external/tinyalsa/include
 LOCAL_SRC_FILES := mixer.c
 LOCAL_MODULE := libshim_adsp
 LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_TARGET_ARCH := arm
 include $(BUILD_SHARED_LIBRARY)
 
 # Camera
@@ -31,7 +30,6 @@ LOCAL_SRC_FILES := GraphicBuffer.cpp
 LOCAL_SHARED_LIBRARIES := libui
 LOCAL_MODULE := libshim_camera
 LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_TARGET_ARCH := arm
 include $(BUILD_SHARED_LIBRARY)
 
 # RIL
@@ -40,6 +38,5 @@ LOCAL_SRC_FILES := sensor.cpp
 LOCAL_SHARED_LIBRARIES := libgui
 LOCAL_MODULE := libshim_ril
 LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_TARGET_ARCH := arm
 include $(BUILD_SHARED_LIBRARY)
 
