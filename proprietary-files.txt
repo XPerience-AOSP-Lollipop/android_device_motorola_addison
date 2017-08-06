@@ -397,11 +397,6 @@ vendor/lib/libOmxWmaDec.so
 # Moto
 bin/batt_health
 
-#mods
-#priv-app/ModService/ModService.apk
-bin/mods_camd
-lib/libmodmanager.so
-
 # Network
 -priv-app/QtiTetherService/QtiTetherService.apk
 vendor/lib/libQtiTether.so
