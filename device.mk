@@ -320,12 +320,12 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service
 
 PRODUCT_PACKAGES += \
-    libcurl \
     libqsap_sdk \
     libQWiFiSoftApCfg \
-	wificond \
-    tcpdump \
-    wcnss_service
+    libwpa_client \
+    wcnss_service \
+    wificond \
+    wifilogd
 
 # Wifi Symlinks
 PRODUCT_PACKAGES += \
