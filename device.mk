@@ -109,6 +109,7 @@ PRODUCT_PACKAGES += \
     libbson \
     MotCamera \
     libshim_buffer \
+    libshim_just \
     Snap
 
 # Camera configuration file. Shared by passthrough/binderized camera HAL
