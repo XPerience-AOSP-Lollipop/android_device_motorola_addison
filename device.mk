@@ -109,6 +109,7 @@ PRODUCT_PACKAGES += \
     libbson \
     MotCamera \
     libshim_buffer \
+    libshim_camera \
     libshim_just \
     Snap
 
