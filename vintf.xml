@@ -25,7 +25,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
-<manifest version="1.0">
+<manifest version="1.0" type="device">
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport arch="32">passthrough</transport>
@@ -64,7 +64,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <!-- /video omx hal -->
     <hal format="hidl">
         <name>android.hardware.graphics.allocator</name>
-        <transport>hwbinder</transport>
+        <transport arch="32">passthrough</transport>
         <impl level="generic"></impl>
         <version>2.0</version>
         <interface>
@@ -84,7 +84,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </hal>
     <hal format="hidl">
         <name>android.hardware.graphics.composer</name>
-        <transport>hwbinder</transport>
+        <transport arch="32">passthrough</transport>
         <impl level="generic"></impl>
         <version>2.1</version>
         <interface>
@@ -129,20 +129,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <impl level="generic"></impl>
         <version>1.0</version>
     </hal>
-    <hal format="hidl">
-        <name>android.hardware.camera.provider</name>
-        <transport arch="32">toggled</transport>
-        <impl level="generic"></impl>
-        <version>2.4</version>
-        <interface>
-            <name>ICameraProvider</name>
-            <instance>legacy/0</instance>
-        </interface>
-    </hal>
     <!-- bluetooth -->
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
-        <transport arch="32">hwbinder</transport>
+        <transport>hwbinder</transport>
         <impl level="generic"></impl>
         <version>1.0</version>
     </hal>
