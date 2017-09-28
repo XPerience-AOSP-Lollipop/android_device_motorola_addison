@@ -246,6 +246,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.0-service \
     android.hardware.power@1.0-impl
 
+# Powerhint configuration file
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/powerhint.xml:system/etc/powerhint.xml
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.mmi.touch.sh \
