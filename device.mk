@@ -243,6 +243,8 @@ PRODUCT_PACKAGES += \
     libOmxVidcCommon \
     libstagefrighthw
 
+PRODUCT_PACKAGES += android.hardware.media.omx@1.0-impl
+
 # Power
 PRODUCT_PACKAGES += \
     power.msm8953
