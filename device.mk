@@ -275,6 +275,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vintf.xml:system/vendor/manifest.xml
 
+#Telephony
+PRODUCT_PACKAGES += telephony-ext
+PRODUCT_BOOT_JARS += telephony-ext
+
 # Wifi
 PRODUCT_PACKAGES += \
     hostapd_default.conf \
