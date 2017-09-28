@@ -181,9 +181,9 @@ PRODUCT_PACKAGES += \
     android.hardware.health@1.0-service
 
 # IPA Manager
-PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml
+#PRODUCT_PACKAGES += \
+#    ipacm \
+#    IPACM_cfg.xml
 
 # IRSC
 PRODUCT_COPY_FILES += \
