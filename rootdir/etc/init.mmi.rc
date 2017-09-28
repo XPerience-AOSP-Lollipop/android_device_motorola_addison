@@ -20,6 +20,9 @@ on init
 on fs
     # use /persist as phony PDS partition
     symlink /persist /pds
+ 
+    wait /dev/block/platform/soc/${ro.boot.bootdevice}
+    symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
 on post-fs
     mkdir /persist/camera 0755 mot_tcmd mot_tcmd
