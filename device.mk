@@ -241,6 +241,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.msm8953
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-service \
+    android.hardware.power@1.0-impl
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.mmi.touch.sh \
