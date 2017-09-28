@@ -1,1 +1,1 @@
-allow cameraserver self:netlink_kobject_uevent_socket create_socket_perms;
+#allow cameraserver self:netlink_kobject_uevent_socket create_socket_perms;

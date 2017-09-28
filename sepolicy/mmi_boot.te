@@ -1,14 +1,14 @@
-type mmi_boot, domain, domain_deprecated;
+#type mmi_boot, domain, domain_deprecated;
 type mmi_boot_exec, exec_type, file_type;
-init_daemon_domain(mmi_boot)
+#init_daemon_domain(mmi_boot)
 
 # shell scripts need to execute /system/bin/sh
-allow mmi_boot shell_exec:file rx_file_perms;
-allow mmi_boot toolbox_exec:file rx_file_perms;
+#allow mmi_boot shell_exec:file rx_file_perms;
+#allow mmi_boot toolbox_exec:file rx_file_perms;
 
-allow mmi_boot radio_data_file:dir w_dir_perms;
-allow mmi_boot radio_data_file:file create_file_perms;
-allow mmi_boot self:capability chown;
-allow mmi_boot sysfs_socinfo:file write;
+#allow mmi_boot radio_data_file:dir w_dir_perms;
+#allow mmi_boot radio_data_file:file create_file_perms;
+#allow mmi_boot self:capability chown;
+#allow mmi_boot sysfs_socinfo:file write;
 
-set_prop(mmi_boot, hw_rev_prop);
+#set_prop(mmi_boot, hw_rev_prop);

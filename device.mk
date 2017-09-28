@@ -200,9 +200,6 @@ PRODUCT_PACKAGES += android.hardware.keymaster@3.0-impl
 PRODUCT_PACKAGES += \
     lights.msm8953
 
-#Enable Lights Impl HAL Compilation
-PRODUCT_PACKAGES += android.hardware.light@2.0-impl
-
 # Media
 PRODUCT_PACKAGES += \
     libc2dcolorconvert
@@ -347,3 +344,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/xperience/config/common_full_phone.mk)
+PRODUCT_VENDOR_KERNEL_HEADERS := hardware/qcom/msm8996/kernel-headers
