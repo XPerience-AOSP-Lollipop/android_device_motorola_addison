@@ -14,7 +14,6 @@
 # limitations under the License.
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-$(call add-product-dex-preopt-module-config,Settings SystemUI ThemeInterfacer, enable)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -109,7 +108,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/ov16860_chromatix.xml:system/etc/camera/ov16860_chromatix.xml
 
 # CMActions
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     CMActions
 
 # Display
@@ -280,4 +279,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, vendor/XPe/config/common_full_phone.mk)
+$(call inherit-product, vendor/xperience/config/common_full_phone.mk)
