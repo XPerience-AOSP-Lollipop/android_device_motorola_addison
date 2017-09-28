@@ -166,6 +166,12 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.mapper@2.0-impl
 
+#Healthd packages
+PRODUCT_PACKAGES += \
+    android.hardware.health@1.0-impl \
+    android.hardware.health@1.0-convert \
+    android.hardware.health@1.0-service
+
 # HW Composer
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-impl \
