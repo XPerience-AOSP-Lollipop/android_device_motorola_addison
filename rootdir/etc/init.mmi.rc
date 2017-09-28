@@ -17,6 +17,9 @@ on init
     chown root diag /sys/kernel/dropbox/event
     chown root diag /sys/kernel/dropbox/data
 
+    # Wifi firmware reload path
+    chown wifi wifi /sys/module/wlan/parameters/fwpath
+
 on fs
     # use /persist as phony PDS partition
     symlink /persist /pds
