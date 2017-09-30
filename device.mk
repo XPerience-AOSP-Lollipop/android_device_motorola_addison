@@ -107,8 +107,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     camera.msm8953 \
     libbson \
-    libshim_camera \
     MotCamera \
+    libshim_buffer \
     Snap
 
 # Camera configuration file. Shared by passthrough/binderized camera HAL

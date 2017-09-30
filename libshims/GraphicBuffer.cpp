@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 The CyanogenMod Project
+ * Copyright (C) 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,18 +14,17 @@
  * limitations under the License.
  */
 
-#include <string>
+#include <utils/Condition.h>
 
-// GraphicBuffer(uint32_t inWidth, uint32_t inHeight, PixelFormat inFormat,
-//               uint32_t inUsage, std::string requestorName = "<Unknown>");
-extern "C" void _ZN7android13GraphicBufferC1EjjijNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE(
-    uint32_t inWidth, uint32_t inHeight, int inFormat, uint32_t inUsage,
-    std::string requestorName);
+#include <gui/BufferQueue.h>
+#include <gui/BufferQueueConsumer.h>
+#include <gui/BufferQueueProducer.h>
+#include "gui/IGraphicBufferAlloc.h"
 
-//libmot_gpu_mapper.so
-extern "C" void _ZN7android13GraphicBufferC1Ejjij(
-    uint32_t inWidth, uint32_t inHeight, int inFormat, uint32_t inUsage) {
-  std::string requestorName = "<Unknown>";
-  _ZN7android13GraphicBufferC1EjjijNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE(
-      inWidth, inHeight, inFormat, inUsage, requestorName);
+namespace android {
+extern "C" void _ZN7android11BufferQueue17createBufferQueueEPNS_2spINS_22IGraphicBufferProducerEEEPNS1_INS_22IGraphicBufferConsumerEEERKNS1_INS_19IGraphicBufferAllocEEE(
+    sp<IGraphicBufferProducer>* outProducer, sp<IGraphicBufferConsumer>* outConsumer, const sp<IGraphicBufferAlloc>& allocator __attribute((unused))) {
+    BufferQueue::createBufferQueue(outProducer, outConsumer, false);
+}
+
 }
