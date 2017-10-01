@@ -26,8 +26,6 @@ import android.util.Log;
 
 import com.cyanogenmod.settings.device.ServiceWrapper.LocalBinder;
 
-import org.cyanogenmod.internal.util.FileUtils;
-
 public class BootCompletedReceiver extends BroadcastReceiver {
     static final String TAG = "CMActions";
     private ServiceWrapper mServiceWrapper;
