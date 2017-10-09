@@ -68,6 +68,9 @@ $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.broadcastradio@1.0-impl \
     audiod \
     audio.a2dp.default \
     audio.primary.msm8953 \
@@ -101,6 +104,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl \
     camera.msm8953 \
     libbson \
     libshim_camera \
@@ -140,6 +144,7 @@ PRODUCT_COPY_FILES += \
 
 # DRM
 PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl \
     libprotobuf-cpp-lite
 
 # Ebtables
@@ -150,10 +155,15 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    fingerprintd
+    android.hardware.biometrics.fingerprint@2.1-service
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl
 
 # GPS
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl \
     libgnsspps \
     gps.msm8953
 
@@ -168,7 +178,8 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.light@2.0-impl \
     android.hardware.light@2.0-service \
-    android.hardware.configstore@1.0-service
+    android.hardware.configstore@1.0-service \
+    android.hardware.renderscript@1.0-impl \
 
 #Healthd packages
 PRODUCT_PACKAGES += \
@@ -220,9 +231,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/libnfc-nxp_ds.conf:system/etc/libnfc-nxp_ds.conf \
 
 PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.0-impl \
     libnfc \
     libnfc_jni \
-    nfc_nci.pn54x.default \
+    nfc_nci.addison \
     NfcNci \
     Tag \
     com.android.nfc_extras
@@ -288,9 +300,23 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl \
+
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-addison.conf:system/etc/thermal-engine-addison.conf
+
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl
+
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
+
+# Vibrator HAL
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl
 
 # add vendor manifest file
 PRODUCT_COPY_FILES += \
