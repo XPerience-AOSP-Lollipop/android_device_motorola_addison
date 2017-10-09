@@ -261,6 +261,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librmnetctl \
     libshim_ril \
+    libshim_ims \
     libxml2
 
 # Seccomp
