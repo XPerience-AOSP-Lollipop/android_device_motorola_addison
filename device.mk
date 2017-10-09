@@ -258,7 +258,6 @@ PRODUCT_PACKAGES += android.hardware.media.omx@1.0-impl
 PRODUCT_PACKAGES += \
     power.msm8953
 
-<<<<<<< HEAD
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-service \
@@ -267,11 +266,10 @@ PRODUCT_PACKAGES += \
 # Powerhint configuration file
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/powerhint.xml:system/etc/powerhint.xml
-=======
+
 # Post intallation script
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/post_install.sh:install/bin/post_install.sh
->>>>>>> 5f568cb... addison: Move NFC config selection to a bash script
 
 # Ramdisk
 PRODUCT_PACKAGES += \

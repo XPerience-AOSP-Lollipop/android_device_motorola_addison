@@ -17,9 +17,6 @@ def FullOTA_InstallEnd(info):
   info.script.Mount("/system")
   info.script.AppendExtra('run_program("/sbin/sh", "/tmp/install/bin/post_install.sh");')
   info.script.Unmount("/system")
-<<<<<<< HEAD
-  info.script.AppendExtra('endif;')
-=======
 
 def AddBootloaderAssertion(info, input_zip):
   android_info = input_zip.read("OTA/android-info.txt")
@@ -29,4 +26,3 @@ def AddBootloaderAssertion(info, input_zip):
     if "*" not in bootloaders:
       info.script.AssertSomeBootloader(*bootloaders)
     info.metadata["pre-bootloader"] = m.group(1)
->>>>>>> 5f568cb... addison: Move NFC config selection to a bash script
