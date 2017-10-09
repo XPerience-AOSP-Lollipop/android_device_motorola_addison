@@ -1,0 +1,3 @@
+#============= hal_fingerprint_default ==============
+allow hal_fingerprint_default device:chr_file ioctl;
+allow hal_fingerprint_default sysfs:file write;

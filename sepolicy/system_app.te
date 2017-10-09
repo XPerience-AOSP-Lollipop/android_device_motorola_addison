@@ -1,3 +1,10 @@
 allow system_app sysfs_mmi_fp:file rw_file_perms;
 allow system_app sysfs_mmi_fp:dir search;
+allow system_app device:chr_file { open read write };
+allow system_app netd_socket:sock_file write;
+allow system_app self:socket { create };
+allow system_app socket_device:sock_file write;
+allow system_app sysfs:file write;
+
 binder_call(system_app, fingerprintd)
+
