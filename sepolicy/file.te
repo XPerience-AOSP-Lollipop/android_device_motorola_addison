@@ -1,5 +1,11 @@
+# debugfs
+type debugfs_ion, fs_type, debugfs_type;
+
 # FSG
 type fsg_file, fs_type, contextmount_type;
+
+# procfs
+type proc_wcnss_service, fs_type;
 
 # RIL
 type netmgr_data_file, file_type, data_file_type;
@@ -9,6 +15,7 @@ type adspd_socket, file_type;
 type cutback_socket, file_type;
 
 # sysfs
+type sysfs_sensors, sysfs_type, fs_type;
 type sysfs_adsp, fs_type, sysfs_type;
 type sysfs_mmi_fp, fs_type, sysfs_type;
 type sysfs_mmi_laser, fs_type, sysfs_type;

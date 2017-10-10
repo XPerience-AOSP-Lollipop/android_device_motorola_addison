@@ -1,5 +1,1 @@
-#============= audioserver ==============
-allow audioserver device:chr_file { ioctl open read write };
-allow audioserver socket_device:sock_file write;
-allow audioserver sysfs:dir { open read };
-allow audioserver sysfs:file { getattr open read }
+allow audioserver socket_device:sock_file create_file_perms;

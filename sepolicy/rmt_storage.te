@@ -1,2 +1,3 @@
+allow rmt_storage radio_config_device:blk_file rw_file_perms;
 allow rmt_storage self:capability dac_override;
 r_dir_file(rmt_storage, fsg_file)

@@ -1,3 +1,0 @@
-#============= platform_app ==============
-allow platform_app device:chr_file { ioctl read write };
-

@@ -1,3 +1,6 @@
+allow ueventd camera_socket:chr_file { create setattr };
 allow ueventd device:chr_file { relabelfrom relabelto };
 allow ueventd sysfs_mmi_fp:file w_file_perms;
 allow ueventd sysfs_mmi_touch:file w_file_perms;
+allow ueventd unlabeled:dir search;
+allow ueventd unlabeled:file { getattr open read };

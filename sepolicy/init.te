@@ -1,20 +1,25 @@
-#============= init ==============
+allow init audio_device:chr_file rw_file_perms;
 allow init debugfs:file write;
-allow init device:chr_file { ioctl open read write };
-allow init kernel:system module_request;
-allow init property_socket:sock_file write;
-allow init self:netlink_route_socket read;
-allow init self:rawip_socket { create getopt };
-allow init self:socket { create ioctl };
-allow init socket_device:sock_file { create setattr unlink };
-allow init vendor_file:file execute_no_trans;
-allow init video_device:chr_file ioctl;
-allow init audio_device:chr_file { write ioctl };
-allow init input_device:chr_file ioctl;
-allow init sensors_device:chr_file { write ioctl };
-allow init tee_device:chr_file { write ioctl };
-
-allow init debugfs:file write;
+allow init diag_device:chr_file rw_file_perms;
 allow init firmware_file:dir mounton;
+allow init input_device:chr_file r_file_perms;
+allow init self:netlink_socket { bind create };
+allow init self:netlink_xfrm_socket { bind create };
+allow init property_socket:sock_file write;
+allow init qdsp_device:chr_file ioctl;
+allow init rmnet_device:chr_file write;
+allow init rtc_device:chr_file ioctl;
+allow init self:capability net_bind_service;
+allow init self:netlink_route_socket { bind create getattr nlmsg_read read setopt write };
+allow init self:rawip_socket { create getopt setopt };
+allow init self:socket create_socket_perms_no_ioctl;
+allow init self:udp_socket ioctl;
+allow init socket_device:sock_file { create setattr };
+allow init sensors_device:chr_file rw_file_perms;
+allow init ssd_device:blk_file write;
+allow init tee_device:chr_file rw_file_perms;
+allow init thermal_device:chr_file ioctl;
+allow init video_device:chr_file { ioctl write };
+allow init wcnss_device:chr_file write;
 
 binder_use(init)

@@ -1,3 +1,4 @@
-#============= hal_fingerprint_default ==============
-allow hal_fingerprint_default device:chr_file ioctl;
-allow hal_fingerprint_default sysfs:file write;
+allow hal_fingerprint_default sysfs_mmi_fp:dir { search open read };
+allow hal_fingerprint_default sysfs_mmi_fp:file { open read write };
+allow hal_fingerprint_default tee_device:chr_file { ioctl open read write };
+allow hal_fingerprint_default unlabeled:file { getattr open read };

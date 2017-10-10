@@ -28,6 +28,8 @@
 
 # RIL
 /data/misc/netmgr(/.*)?                                  u:object_r:netmgr_data_file:s0
+/system/bin/netmgrd                                                u:object_r:netmgrd_exec:s0
+/system/bin/qmuxd                                                  u:object_r:qmuxd_exec:s0
 
 # Sensors
 /dev/laser                                               u:object_r:laser_device:s0

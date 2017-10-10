@@ -1,1 +1,5 @@
+type bluetooth_device, dev_type;
 type laser_device, dev_type;
+type persist_block_device, dev_type;
+type qcril_device, dev_type;
+type radio_config_device, dev_type;
