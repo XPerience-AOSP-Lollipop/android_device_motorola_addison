@@ -77,6 +77,7 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
     libshim_adsp \
+	libtinycompress \
     tinymix
 
 PRODUCT_COPY_FILES +=  \
@@ -339,3 +340,8 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/xperience/config/common_full_phone.mk)
+
+ifeq ($(GAPPS_INCLUDED),true)
+GAPPS_VARIANT := mini
+$(call inherit-product-if-exists, vendor/opengapps/build/opengapps-packages.mk)
+endif
