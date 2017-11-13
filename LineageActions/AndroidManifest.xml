@@ -61,7 +61,7 @@
                 android:resource="@drawable/ic_settings_gestures" />
             <meta-data
                 android:name="com.android.settings.summary"
-                android:resource="@string/empty" />
+                android:resource="@string/summary_empty" />
         </activity>
 
     </application>

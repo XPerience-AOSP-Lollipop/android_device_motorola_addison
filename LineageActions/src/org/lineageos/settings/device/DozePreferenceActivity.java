@@ -32,8 +32,8 @@ public class DozePreferenceActivity extends PreferenceActivity {
                 .replace(android.R.id.content, new DozePreferenceFragment()).commit();
     }
 
-    public class DozePreferenceFragment extends PreferenceFragment {
-         private static final String CATEGORY_AMBIENT_DISPLAY = "ambient_display_key";
+    public static class DozePreferenceFragment extends PreferenceFragment {
+        private static final String CATEGORY_AMBIENT_DISPLAY = "ambient_display_key";
 
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
