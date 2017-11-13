@@ -34,6 +34,8 @@ on early-init
     mkdir /system 0777 root root
     symlink /data/tombstones /tombstones
     mkdir /dsp 0771 media media
+    chown root system /dev/kmsg
+    chmod 0620 /dev/kmsg
 
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
