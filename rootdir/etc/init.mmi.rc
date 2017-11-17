@@ -14,8 +14,8 @@ on init
     chmod 0640 /sys/fs/pstore/dmesg-ramoops-0
 
     # Setup kernel dropbox permissions so that dropboxd can utilize it
-    chown root diag /sys/kernel/dropbox/event
-    chown root diag /sys/kernel/dropbox/data
+    chown root oem_2950 /sys/kernel/dropbox/event
+    chown root oem_2950 /sys/kernel/dropbox/data
 
 on fs
     # use /persist as phony PDS partition
@@ -109,7 +109,7 @@ on post-fs-data
     mkdir /data/misc/sensorhub 0770 system compass
 
     # Setup folder for native to transfer data to NativeDropBoxAgent
-    mkdir /data/system/dropbox-add 0730 system diag
+    mkdir /data/system/dropbox-add 0730 system oem_2950
 
     # Create directory for cutback
     mkdir /data/misc/cutback 0770 radio wifi
@@ -148,7 +148,7 @@ on post-fs-data
     mkdir /data/hardware_revisions 0755 system system
 
     #Create directory for adspd
-    mkdir /data/adspd 0770 audio diag
+    mkdir /data/adspd 0770 audio oem_2950
 
     # Setup folder for camera dump subsystem
     mkdir /data/camera_dump 0750 media media
@@ -276,7 +276,7 @@ service adspd /system/bin/adspd
    class main
    socket adspdsock stream 0660 system audio
    user audio
-   group audio input diag
+   group audio input oem_2950
 
 service mmi-boot-sh /system/bin/init.mmi.boot.sh
     class core
