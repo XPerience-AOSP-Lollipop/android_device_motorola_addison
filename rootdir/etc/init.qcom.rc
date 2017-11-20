@@ -150,6 +150,9 @@ on boot
     #Create NETMGR daemon socket area
     mkdir /dev/socket/netmgr 0750 radio radio
 
+    #Allow acces to read cmdile to telephony 
+    chmod 0644 /proc/cmdline
+
     setprop wifi.interface wlan0
 
     setprop ro.telephony.call_ring.multiple false
