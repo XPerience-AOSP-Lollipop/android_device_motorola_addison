@@ -77,7 +77,7 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
     libshim_adsp \
-	libtinycompress \
+    libtinycompress \
     tinymix
 
 PRODUCT_COPY_FILES +=  \
