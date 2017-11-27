@@ -3,7 +3,7 @@ allow init debugfs:file write;
 allow init diag_device:chr_file rw_file_perms;
 allow init firmware_file:dir mounton;
 allow init input_device:chr_file r_file_perms;
-allow init init:netlink_socket rw_file_perms;
+allow init init:netlink_socket { read write };
 allow init ipacm_socket:sock_file rw_file_perms;
 allow init self:netlink_socket { bind create };
 allow init self:netlink_xfrm_socket { bind create };
