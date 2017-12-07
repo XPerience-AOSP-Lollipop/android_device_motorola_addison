@@ -165,6 +165,10 @@ PRODUCT_PACKAGES += \
     gps.msm8953 \
     libshims_get_process_name
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0
+
 # IPA Manager
 PRODUCT_PACKAGES += \
     ipacm \
