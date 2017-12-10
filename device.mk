@@ -95,7 +95,6 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl \
     libbt-vendor
 
 # Camera
@@ -248,7 +247,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.mmi.touch.sh \
     wlan_carrier_bin.sh \
-    init.qcom.bt.sh \
     init.qcom.ril.sh
 
 PRODUCT_PACKAGES += \
