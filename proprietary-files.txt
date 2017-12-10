@@ -1,7 +1,6 @@
 # Proprietary files for addison
 
 # ADSP
-bin/adspd
 bin/adsprpcd
 lib/libadspd.so
 vendor/lib/libadsprpc.so
@@ -57,6 +56,7 @@ lib/libfamily_photo.so
 lib/libjscore.so
 lib/libjustshoot.so
 lib/libmbs.so
+lib/libmemalloc.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
 lib/libmm-qcamera.so
@@ -76,6 +76,7 @@ vendor/lib/libchromaflash.so
 vendor/lib/libfastcvopt.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libflash_sky81298.so
+vendor/lib/libgralloc1.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libllvd_smore.so
@@ -230,12 +231,15 @@ etc/firmware/cpp_firmware_v1_10_0.fw
 -framework/com.qti.snapdragon.sdk.display.jar
 -vendor/app/colorservice/colorservice.apk
 etc/permissions/com.qti.snapdragon.sdk.display.xml
+lib/libsd_sdk_display.so
+lib/libsdm-disp-apis.so
 vendor/lib/libscalar.so
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-diag.so
-vendor/lib/libsdm-disp-apis.so
+vendor/lib/libsdm-disp-vndapis.so
 vendor/lib/libsdmextension.so
-vendor/lib/libsd_sdk_display.so
+vendor/lib/libtinyxml2_1.so
+vendor/lib/vendor.display.color@1.0_vendor.so
 
 # DRM
 vendor/bin/qseecomd
@@ -275,7 +279,6 @@ etc/permissions/izat.xt.srv.xml
 -framework/com.qti.location.sdk.jar
 -framework/com.qualcomm.location.vzw_library.jar
 -framework/izat.xt.srv.jar
-vendor/bin/slim_daemon
 lib/libloc_api_v02.so
 lib/libloc_ds_api.so
 -priv-app/com.qualcomm.location/com.qualcomm.location.apk
@@ -325,12 +328,10 @@ vendor/lib/libgsl.so
 vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
 vendor/lib/libllvm-qgl.so
-vendor/lib/libmmQSM.so
 vendor/lib/libOpenCL.so
 vendor/lib/librs_adreno_sha1.so
 vendor/lib/librs_adreno.so
 vendor/lib/libRSDriver_adreno.so
-vendor/lib/libscale.so
 
 # Graphics firmware
 etc/firmware/a530_gpmu.fw2
@@ -390,11 +391,6 @@ vendor/lib/libOmxApeDec.so
 vendor/lib/libOmxApeDecSw.so
 vendor/lib/libOmxWmaDec.so
 
-# Network
--priv-app/QtiTetherService/QtiTetherService.apk
-vendor/lib/libQtiTether.so
-vendor/lib/libconnctrl.so
-
 # NFC
 vendor/firmware/libpn548ad_fw.so
 
@@ -423,6 +419,12 @@ vendor/lib/libsmemlog.so
 -app/datastatusnotification/datastatusnotification.apk
 -app/QtiTelephonyService/QtiTelephonyService.apk|763deb39a73c7d2bd3b67524722ec4ef4f0d1f18
 bin/qmi_motext_hook
+<<<<<<< HEAD
+=======
+bin/radish
+bin/rmt_storage
+bin/tftp_server
+>>>>>>> c6fd05b... addison: Match vendor changes
 etc/data/dsi_config.xml
 etc/data/netmgr_config.xml
 etc/permissions/qcrilhook.xml
@@ -433,7 +435,6 @@ lib/libadropbox.so
 lib/libmdmcutback.so
 lib/libmotext_inf.so
 lib/libqmimotext.so
--lib/libril.so
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/qti
 vendor/bin/pm-proxy
@@ -485,7 +486,6 @@ etc/permissions/com.quicinc.cne.xml
 -framework/ConnectivityExt.jar
 -framework/cneapiclient.jar
 -framework/com.quicinc.cne.jar
--priv-app/CNEService/CNEService.apk
 vendor/lib/libcne.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libcneqmiutils.so
