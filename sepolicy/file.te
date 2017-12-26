@@ -21,3 +21,6 @@ type sysfs_mmi_fp, fs_type, sysfs_type;
 type sysfs_mmi_laser, fs_type, sysfs_type;
 type sysfs_mmi_touch, fs_type, sysfs_type;
 type sysfs_wcnsscore, fs_type, sysfs_type;
+
+type firmware_file, fs_type, contextmount_type;
+type persist_file, file_type;
