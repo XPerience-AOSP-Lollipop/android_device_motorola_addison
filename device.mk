@@ -167,6 +167,10 @@ PRODUCT_PACKAGES += \
     gps.msm8953 \
     libshims_get_process_name
 
+# HIDL
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
+
 # IPA Manager
 PRODUCT_PACKAGES += \
     ipacm \
