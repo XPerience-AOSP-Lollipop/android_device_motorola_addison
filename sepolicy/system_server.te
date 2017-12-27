@@ -3,6 +3,7 @@ allow system_server qti_debugfs:file r_file_perms;
 allow system_server sensors_device:chr_file { ioctl open read };
 allow system_server socket_device:sock_file write;
 allow system_server sysfs_sensors:file write;
+allow system_server default_android_service:service_manager find;
 
 qmux_socket(system_server);
 
