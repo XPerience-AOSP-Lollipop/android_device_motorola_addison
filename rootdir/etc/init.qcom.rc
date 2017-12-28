@@ -403,7 +403,7 @@ service energy-awareness /system/bin/energy-awareness
     group system
     oneshot
 
-service qseecomd /system/bin/qseecomd
+service qseecomd /vendor/bin/qseecomd
    class core
    user root
    group root

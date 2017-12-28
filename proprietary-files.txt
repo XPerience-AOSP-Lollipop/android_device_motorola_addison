@@ -238,7 +238,7 @@ vendor/lib/libsdmextension.so
 vendor/lib/libsd_sdk_display.so
 
 # DRM
-bin/qseecomd
+vendor/bin/qseecomd
 vendor/lib/libcppf.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
