@@ -490,20 +490,20 @@ service imsqmidaemon /system/bin/imsqmidaemon
     socket ims_qmid stream 0660 system radio
     group radio log diag
 
-service rmt_storage /system/bin/rmt_storage
+service rmt_storage /vendor/bin/rmt_storage
     class core
     user root
 
-service tftp_server /system/bin/tftp_server
+service tftp_server /vendor/bin/tftp_server
    class core
    user root
 
-service per_mgr /system/bin/pm-service
+service per_mgr /vendor/bin/pm-service
     class core
     user system
     group system
 
-service per_proxy /system/bin/pm-proxy
+service per_proxy /vendor/bin/pm-proxy
     class core
     user system
     group system
@@ -515,7 +515,7 @@ on property:init.svc.per_mgr=running
 on property:sys.shutdown.requested=*
     stop per_proxy
 
-service netmgrd /system/bin/netmgrd
+service netmgrd /vendor/bin/netmgrd
     class main
     user root
     group root wifi wakelock radio inet
