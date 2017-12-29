@@ -58,7 +58,7 @@ on fs
 
 on init
     # Symbols required for motorola blobs
-    export LD_SHIM_LIBS /system/bin/adspd|libshim_adsp.so:/system/lib/libandroid.so|libshim_ril.so:/system/vendor/lib/libizat_core.so|libshims_get_process_name.so:/system/vendor/lib/libmot_gpu_mapper.so|libshim_buffer.so:/system/lib/libjustshoot.so|libshim_just.so:/system/lib/hw/camera.msm8953.so|libshim_camera.so:/system/vendor/lib/lib-imsvt.so|libshim_ims.so:/system/vendor/bin/hw/rild|rild_socket.so
+    export LD_SHIM_LIBS /system/bin/adspd|libshim_adsp.so:/system/lib/libandroid.so|libshim_ril.so:/system/vendor/lib/libizat_core.so|libshims_get_process_name.so:/system/vendor/lib/libmot_gpu_mapper.so|libshim_buffer.so:/system/lib/libjustshoot.so|libshim_just.so:/system/lib/hw/camera.msm8953.so|libshim_camera.so:/system/vendor/lib/lib-imsvt.so|libshim_ims.so:/system/vendor/lib/libril-qc-qmi-1.so|rild_socket.so
 
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
 
@@ -459,7 +459,7 @@ service ims_rtp_daemon /system/vendor/bin/ims_rtp_daemon
    class main
    user system
    socket ims_rtpd stream 0660 system radio
-   group radio diag diag inet log
+   group radio oem_2950 oem_2950 inet log
    disabled
 
 on property:sys.ims.DATA_DAEMON_STATUS=1
@@ -468,7 +468,7 @@ on property:sys.ims.DATA_DAEMON_STATUS=1
 service imscmservice /system/vendor/bin/imscmservice
     class main
     user system
-    group radio diag diag log
+    group radio oem_2950 oem_2950 log
     disabled
 
 on property:sys.ims.DATA_DAEMON_STATUS=1
@@ -478,7 +478,7 @@ service imsdatadaemon /system/vendor/bin/imsdatadaemon
     class main
     user system
     socket ims_datad stream 0660 system radio
-    group system wifi radio inet log diag
+    group system wifi radio inet log oem_2950
     disabled
 
 on property:sys.ims.QMI_DAEMON_STATUS=1
@@ -488,7 +488,7 @@ service imsqmidaemon /system/vendor/bin/imsqmidaemon
     class main
     user system
     socket ims_qmid stream 0660 system radio
-    group radio log diag
+    group radio log oem_2950
 
 service rmt_storage /system/vendor/bin/rmt_storage
     class core
@@ -567,7 +567,7 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
 service ril-daemon2 /vendor/bin/hw/rild -c 2
     class main
     user radio
-    group radio cache inet misc audio log readproc wakelock
+    group radio cache inet misc audio log readproc wakelock oem_2950
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
 service rild2-wrapper /system/bin/init.qcom.ril.sh
