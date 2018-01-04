@@ -419,12 +419,9 @@ vendor/lib/libsmemlog.so
 -app/datastatusnotification/datastatusnotification.apk
 -app/QtiTelephonyService/QtiTelephonyService.apk|763deb39a73c7d2bd3b67524722ec4ef4f0d1f18
 bin/qmi_motext_hook
-<<<<<<< HEAD
-=======
 bin/radish
 bin/rmt_storage
 bin/tftp_server
->>>>>>> c6fd05b... addison: Match vendor changes
 etc/data/dsi_config.xml
 etc/data/netmgr_config.xml
 etc/permissions/qcrilhook.xml
