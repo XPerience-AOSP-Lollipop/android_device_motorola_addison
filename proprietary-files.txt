@@ -557,6 +557,12 @@ bin/qmi_motext_hook
 bin/radish
 bin/rmt_storage
 bin/tftp_server
+bin/pm-proxy
+bin/pm-service
+bin/netmgrd
+bin/radish
+bin/rmt_storage
+bin/tftp_server
 etc/data/dsi_config.xml
 etc/data/netmgr_config.xml
 etc/permissions/qcrilhook.xml
@@ -569,13 +575,7 @@ lib/libmotext_inf.so
 lib/libqmimotext.so
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/qti
-vendor/bin/pm-proxy
-vendor/bin/pm-service
-vendor/bin/netmgrd
-vendor/bin/radish
 #vendor/bin/hw/rild
-vendor/bin/rmt_storage
-vendor/bin/tftp_server
 vendor/lib/libconfigdb.so
 vendor/lib/liblqe.so
 vendor/lib/libmdmdetect.so

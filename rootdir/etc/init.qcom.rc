@@ -403,7 +403,7 @@ service energy-awareness /system/bin/energy-awareness
     group system
     oneshot
 
-service qseecomd /system/vendor/bin/qseecomd
+service qseecomd /system/bin/qseecomd
    class core
    user root
    group root
@@ -445,17 +445,17 @@ service wcnss-service /vendor/bin/wcnss_service
     group system wifi radio
     oneshot
 
-service adsprpcd /system/vendor/bin/adsprpcd
+service adsprpcd /system/bin/adsprpcd
     class main
     user media
     group media
 
-service irsc_util /system/vendor/bin/irsc_util "/etc/sec_config"
+service irsc_util /system/bin/irsc_util "/etc/sec_config"
     class core
     user root
     oneshot
 
-service ims_rtp_daemon /system/vendor/bin/ims_rtp_daemon
+service ims_rtp_daemon /system/bin/ims_rtp_daemon
    class main
    user system
    socket ims_rtpd stream 0660 system radio
@@ -465,7 +465,7 @@ service ims_rtp_daemon /system/vendor/bin/ims_rtp_daemon
 on property:sys.ims.DATA_DAEMON_STATUS=1
     start ims_rtp_daemon
 
-service imscmservice /system/vendor/bin/imscmservice
+service imscmservice /system/bin/imscmservice
     class main
     user system
     group radio oem_2950 oem_2950 log
@@ -474,7 +474,7 @@ service imscmservice /system/vendor/bin/imscmservice
 on property:sys.ims.DATA_DAEMON_STATUS=1
     start imscmservice
 
-service imsdatadaemon /system/vendor/bin/imsdatadaemon
+service imsdatadaemon /system/bin/imsdatadaemon
     class main
     user system
     socket ims_datad stream 0660 system radio
@@ -484,26 +484,26 @@ service imsdatadaemon /system/vendor/bin/imsdatadaemon
 on property:sys.ims.QMI_DAEMON_STATUS=1
     start imsdatadaemon
 
-service imsqmidaemon /system/vendor/bin/imsqmidaemon
+service imsqmidaemon /system/bin/imsqmidaemon
     class main
     user system
     socket ims_qmid stream 0660 system radio
     group radio log oem_2950
 
-service rmt_storage /system/vendor/bin/rmt_storage
+service rmt_storage /system/bin/rmt_storage
     class core
     user root
 
-service tftp_server /system/vendor/bin/tftp_server
+service tftp_server /system/bin/tftp_server
    class core
    user root
 
-service per_mgr /system/vendor/bin/pm-service
+service per_mgr /system/bin/pm-service
     class core
     user system
     group system
 
-service per_proxy /system/vendor/bin/pm-proxy
+service per_proxy /system/bin/pm-proxy
     class core
     user system
     group system
@@ -515,12 +515,12 @@ on property:init.svc.per_mgr=running
 on property:sys.shutdown.requested=*
     stop per_proxy
 
-service netmgrd /system/vendor/bin/netmgrd
+service netmgrd /system/bin/netmgrd
     class main
     user root
     group root wifi wakelock radio inet
 
-service ipacm-diag /system/vendor/bin/ipacm-diag
+service ipacm-diag /system/bin/ipacm-diag
     class main
     user system
     socket ipacm_log_file dgram 660 system net_admin
